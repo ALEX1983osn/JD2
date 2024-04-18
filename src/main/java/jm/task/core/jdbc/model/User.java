@@ -3,8 +3,9 @@ package jm.task.core.jdbc.model;
 import javax.persistence.Column;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import java.sql.Connection;
 import java.util.Objects;
+
+
 
 @Table
 public class User {
@@ -33,9 +34,6 @@ public class User {
     public User(long id, String name, String lastName, byte age) {
     }
 
-    public static Connection getConnection() {
-        return null;
-    }
 
     public Long getId() {
         return id;
