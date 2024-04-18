@@ -10,11 +10,9 @@ import java.util.List;
 public class UserDaoJDBCImpl implements UserDao {
 
     Connection connection;
-    Util util;
 
     public UserDaoJDBCImpl() {
-        util = new Util();
-        connection = util.getConnection();
+        connection = Util.getConnection();
     }
 
     @Override
